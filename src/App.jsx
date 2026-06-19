@@ -1,30 +1,17 @@
 import { useState } from 'react'
 
-// import Blog from './Blog'
-
-import UserCard from './Usercard'
+import ToggleButton from './ToggleButton';
 
 function App() {
+  const [count, setStcount]= useState(0);
+  const Increment = () => {
+    setStcount(count + 1)
+    console.log(count)
+  }
+
   return(
     <>
-
-    <UserCard 
-    Name={"Ahmed"}
-    Email={"sadakc15@gmail.com"}
-    />
-    <UserCard 
-    Name={"Ali"}
-    Email={"sadakc15@gmail.com"}
-    />
-    <UserCard 
-    Name={"Ahmed"}
-    Email={"ahmed@gmail.com"}
-    />
-    <UserCard 
-    Name={"Maryan"}
-    Email={"maryan@gmail.com"}
-    />
-
+      <ToggleButton />
     </>
   )
 }
