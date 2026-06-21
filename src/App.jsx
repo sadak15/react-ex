@@ -1,17 +1,12 @@
-import { useState } from 'react'
 
-import ToggleButton from './ToggleButton';
+import ShoppingCart from './ShoppingCart'
+
 
 function App() {
-  const [count, setStcount]= useState(0);
-  const Increment = () => {
-    setStcount(count + 1)
-    console.log(count)
-  }
-
+ 
   return(
     <>
-      <ToggleButton />
+    <ShoppingCart />
     </>
   )
 }
