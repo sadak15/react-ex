@@ -1,6 +1,8 @@
 
 import  {useEffect, useState} from 'react'
 
+import  MouseTracker from './MouseTracker'
+
 
 function App() {
 
@@ -29,7 +31,9 @@ function App() {
         type="text"
         value={greeting}
         onChange={(e) => setGreeting(e.target.value)}
+       
       />
+       <MouseTracker/>
     </div>
   );
 }
