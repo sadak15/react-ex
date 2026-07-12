@@ -1,15 +1,16 @@
+import UserList from "./UserList";
 
-import Countdown from "./Countdown"
-import GitHubUserSearch from "./PokemonSearch"
+const App = () => {
+  const users = [
+    { id: 1, name: "Ahmed", email: "sadakc15@gmail.com" },
+    { id: 2, name: "Haaruun", email: "sadakc15@gmail.com" },
+  ];
 
-function App() {
+  return (
+    <div>
+      <UserList users={users} />
+    </div>
+  );
+};
 
-   return (
-    <>
-    <Countdown/>
-    <GitHubUserSearch/>
-    </>
-   )
-}
-
-export default App
+export default App;
