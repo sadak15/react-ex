@@ -1,5 +1,6 @@
 
 import LoginForm from "./Login";
+import Counter from "./Counter";
 
 const App = () => {
   const users = [
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <div>
       <LoginForm/>
+      <Counter/>
     </div>
   );
 };
