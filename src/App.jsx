@@ -1,6 +1,7 @@
 
 import LoginForm from "./Login";
 import Counter from "./Counter";
+import DoubleCounter from "./doubleCounterReducer"
 
 const App = () => {
   const users = [
@@ -10,8 +11,9 @@ const App = () => {
 
   return (
     <div>
-      <LoginForm/>
-      <Counter/>
+      {/* <LoginForm/>
+      <Counter/> */}
+      <DoubleCounter/>
     </div>
   );
 };
