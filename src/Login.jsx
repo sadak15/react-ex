@@ -8,7 +8,6 @@ const LoginForm = () => {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    // Simulate authentication
     if (username && password) {
       setIsLoggedIn(true);
     }
