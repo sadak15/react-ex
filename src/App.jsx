@@ -1,19 +1,10 @@
 
-import LoginForm from "./Login";
-import Counter from "./Counter";
-import DoubleCounter from "./doubleCounterReducer"
+import MultiStepForm from "./MultiStepForm"
 
 const App = () => {
-  const users = [
-    { id: 1, name: "Ahmed", email: "sadakc15@gmail.com" },
-    { id: 2, name: "Haaruun", email: "sadakc15@gmail.com" },
-  ];
-
   return (
     <div>
-      {/* <LoginForm/>
-      <Counter/> */}
-      <DoubleCounter/>
+      <MultiStepForm />
     </div>
   );
 };
